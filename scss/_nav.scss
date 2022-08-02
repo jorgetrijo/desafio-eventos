@@ -1,0 +1,21 @@
+.navs{
+    border: solid black;
+    top: 20px;
+    opacity: 0.7;
+}
+.lista{
+    display: flex;
+    list-style: none;
+    font-size: 1em;
+    margin: 0;  
+    background-color: black;
+    justify-content: space-between;
+}
+li {
+    padding: 10px;
+}
+
+a {
+    color: rgb(104, 102, 102);
+    text-decoration: none;
+}
