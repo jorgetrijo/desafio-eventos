@@ -83,6 +83,7 @@ else if (cantidad == 2){
 }
 }
 else {
-    Jeans.pop ()
-    console.log(Jeans)
+    for (const producto of Jeans) {
+        console.log(producto)
+    }
 }
