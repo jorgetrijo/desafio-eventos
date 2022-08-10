@@ -1,11 +1,11 @@
-const jean1 = { producto: "jean", color: "clasico", marca: "Levis", precio: 2599};
-const jean2 = { producto: "jean", color: "azul oscuro", marca: "Kevingston", precio: 2999};
-const jean3 = { producto: "jean", color: "celeste", marca: "Zara", precio: 2499};
-const jean4 = { producto: "jean", color: "azul claro", marca: "McOwens", precio: 3999};
+const jean1 = { producto: "JEAN L STRAIGHT HEAT", color: "azul medio", marca: "47 street", precio: 11999};
+const jean2 = { producto: "JEAN STRAIGHT MALIBU", color: "azul oscuro", marca: "47 street", precio: 12999};
+const jean3 = { producto: "JEAN MOM UNITED", color: "azul medio", marca: "47 street", precio: 10999};
+const jean4 = { producto: "JEAN H RELAX TADOW", color: "azul claro", marca: "47 street", precio: 9999};
 
 const Jeans = [jean1, jean2, jean3, jean4]
 console.log("Bienvenido a Gramar Indumentarias.")
-let accion = prompt("Querés comprar o ver un detalle de los productos?")
+let accion = prompt("Querés comprar o ver un detalle de los productos? Escribi comprar o detalle")
 if (accion == "comprar"){
 let cantidad = parseInt(prompt("Cuántos jeans querés comprar? Compra máxima 2 jeans"));
 if (cantidad == 1){
@@ -83,7 +83,15 @@ else if (cantidad == 2){
 }
 }
 else {
+    console.log("Estos son los jeans que tenemos actualmente disponibles:")
     for (const producto of Jeans) {
         console.log(producto)
     }
 }
+console.log("Gracias por visitar Gramar Indumentarias.");
+
+let MaximoValor = parseInt(prompt("Cuanto te gustaría gastar?"))
+console.log("Estos son los jeans que cuestan menos de $" + MaximoValor + ":")
+const buscado = Jeans.filter(producto => producto.precio < MaximoValor)
+console.log(buscado)
+

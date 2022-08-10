@@ -12,24 +12,24 @@ body {
   font-family: 'Edu TAS Beginner', cursive; }
 
 h1 {
-  text-align: center; }
+  text-align: center;
+  color: #161116; }
 
 .navs {
-  border: solid black;
-  top: 20px;
-  opacity: 0.7; }
+  border: solid #cf78c8 5px;
+  top: 20px; }
 
 .lista {
   display: flex;
   list-style: none;
   font-size: 1em;
   margin: 0;
-  background-color: black;
+  background-color: #cf78c8;
   justify-content: space-between; }
 
 li {
   padding: 10px; }
 
 a {
-  color: #686666;
+  color: #110c0f;
   text-decoration: none; }
